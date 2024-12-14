@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(90deg, #C7C5F4, #776BCC);        
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            margin: 0 auto;
+            width: 90%;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #5D54A4;
+        }
+
+        td {
+            background-color: #7C78B8;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #6A679E;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #5D54A4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Welcome Message -->
+        <div class="welcome-message">
+            <h2>Welcome, Student Roll No: {{ rollno }}</h2>
+        </div>
+
+        <!-- Timetable Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Loop for 6 periods -->
+                    <tr>
+                        <td>Period 1</td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Period 2</td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Period 3</td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Period 4</td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Period 5</td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Period 6</td>
+                        <td>
+                            <h3>Computer Science</h3>
+                            <h3>Mr. Sharma</h3>
+                            <h3>104</h3>
+                        </td>
+                        <td>
+                            <h3>Chemistry</h3>
+                            <h3>Dr. Mehta</h3>
+                            <h3>103</h3>
+                        </td>
+                        <td>
+                            <h3>English</h3>
+                            <h3>Mrs. Patel</h3>
+                            <h3>105</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                        <td>
+                            <h3>Physics</h3>
+                            <h3>Dr. Gupta</h3>
+                            <h3>102</h3>
+                        </td>
+                        <td>
+                            <h3>Maths</h3>
+                            <h3>Mr. Singh</h3>
+                            <h3>101</h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
